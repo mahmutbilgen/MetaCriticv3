@@ -6,12 +6,12 @@
 
 Application can do the following:
 
-1. Parse the HTML for the "Top Playstation 4 Games (By Metascore)" on Metacritic's PS4 page: `http://www.metacritic.com/game/playstation-4`.
+1. Parse the HTML for the "Top Games " on Metacritic's Games page: `http://www.metacritic.com/game`.
 
-2. Expose a REST API for retrieving top PS4 games. There should be 2 exposed methods:
+2. Expose a REST API for retrieving top games. There should be 2 exposed methods:
 
 ## GET​​ ​​/games
-An​ ​HTTP​ `​GET`​ ​request​ ​to​ `​​/games`​​ ​returns​ ​all​ ​top​ ​PS4​ ​games​ ​on​ ​the​ ​Metacritic page​ ​as​ ​an​ ​array​ ​of​ ​JSON​ ​objects.​ ​For​ ​example:
+An​ ​HTTP​ `​GET`​ ​request​ ​to​ `​​/games`​​ ​returns​ ​all​ ​top​ ​games​ ​on​ ​the​ ​Metacritic page​ ​as​ ​an​ ​array​ ​of​ ​JSON​ ​objects.​ ​For​ ​example:
 
 
  ```json
