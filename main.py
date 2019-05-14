@@ -22,8 +22,6 @@ def games_all():
 
 @app.route('/')
 def index():
-    # return send_from_directory('','README.md')
-    # return Flask.render_template('filename.html')
     return app.send_static_file('index.html')
 
 def main():
