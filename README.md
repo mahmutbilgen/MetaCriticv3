@@ -1,6 +1,6 @@
-
+### This is a test TEXT written in Windows CR LF UTF8 
 # Parsing​ ​Metacritic​ ​Test / REST API
-## Task:
+## Task:  
 
 #### Write a proof of application in which scraping a web site and service it in REST API server
 
@@ -21,7 +21,7 @@ An​ ​HTTP `​GET`​ ​request​ ​to​ `​​/games`​​ ​returns
     "score": 94
   }, 
   {
-    "title": "Horizon:  ​Zero​​Dawn",
+    "title": "Horizon:Zero​​Dawn",
     "score": 89
    }
 ]
