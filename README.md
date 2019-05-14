@@ -10,18 +10,18 @@ Application can do the following:
 
 2. Expose a REST API for retrieving top games. There should be 2 exposed methods:
 
-## GET​​ ​​/games
-An​ ​HTTP​ `​GET`​ ​request​ ​to​ `​​/games`​​ ​returns​ ​all​ ​top​ ​games​ ​on​ ​the​ ​Metacritic page​ ​as​ ​an​ ​array​ ​of​ ​JSON​ ​objects.​ ​For​ ​example:
+## GET​​ ​  ​/games
+An​ ​HTTP `​GET`​ ​request​ ​to​ `​​/games`​​ ​returns​ ​all​ ​top​ ​games​ ​on​ ​the​ ​Metacritic page​ ​as​ ​an​ ​array​ ​of​ ​JSON​ ​objects.​ ​For​ ​example:
 
 
  ```json
 [
   {
-    "title": "Persona​ ​5",
+    "title": "Persona ​5",
     "score": 94
   }, 
   {
-    "title": "Horizon:​ ​Zero​ ​Dawn",
+    "title": "Horizon:  ​Zero​​Dawn",
     "score": 89
    }
 ]
