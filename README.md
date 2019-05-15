@@ -26,7 +26,7 @@ An HTTP `GET` request to `/games` returns all top games on the Metacritic page a
 ]
 ```
 
-## GET /games/<title> 
+## GET /games/\<title> 
 
  An HTTP GET request to `/games/<title>` returns JSON for a specific game that matches the corresponding game title. 
  For example, an HTTP GET to `/games/Nioh` should return an individual JSON object for Nioh:
@@ -53,7 +53,7 @@ python3 main.py
 ### Run with Docker
 
 ```
-docker run -it -p 8080:8080 mbilgen/metacriticv3:latest
+docker run -it -p 8080:8080 mbilgen/metacritic:latest
 ```
 
 ### Send test requests
