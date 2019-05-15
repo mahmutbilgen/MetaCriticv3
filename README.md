@@ -1,5 +1,3 @@
-
-### This is a test-1 TEXT written in Windows CR LF UTF8 
 # Parsing  Metacritic Test / REST API
 ## Task:  
 
