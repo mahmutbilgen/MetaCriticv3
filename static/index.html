@@ -7,7 +7,7 @@
 <body>
  <h1> Landing Page</h1>
 
-<h2>Parsing​ ​Metacritic​ / REST API</h2>
+<h2>Parsing Metacritic / REST API</h2>
 
 <h2>Task:</h2>
 
@@ -19,39 +19,39 @@
     <li><p>Expose a REST API for retrieving top games. There should be 2 exposed methods:</p></li>
 </ol>
 
-<h2 >1. GET​​ ​​/games</h2>
+<h2 >1. GET /games</h2>
 
-<p>An​ ​HTTP​ <code>​GET</code>​ ​request​ ​to​ <code>​​/games</code>​​ ​returns​ ​all​ ​top​ ​​games​ ​on​ ​the​ ​Metacritic page​ ​as​ ​an​ ​array​ ​of​ ​JSON​ ​objects.​ ​For​ ​example:</p>
+<p>An HTTP <code>GET</code> request to <code>/games</code> returns all top games on the Metacritic page as an array of JSON objects. For example:</p>
 
 <code>
 [
   {
-    "title": "Persona​ ​5",
+    "title": "Persona 5",
     "score": 94
   },
   {
-    "title": "Horizon:​ ​Zero​ ​Dawn",
+    "title": "Horizon: Zero Dawn",
     "score": 89
    }
 ]</code>
 
-<h2> 2. GET​​ ​​/games/&lt;title&gt;</h2>
+<h2> 2. GET /games/&lt;title&gt;</h2>
  <pre>
- An​ ​HTTP​ ​GET​ ​request​ ​to​ ​​`/games/​&lt;title&gt;`​​ ​returns​ ​JSON​ ​for​ ​a​ ​specific​ ​game that​ ​matches​ ​the​ ​corresponding​ ​game​ ​title.​ ​
- For​ ​example,​ ​an​ ​HTTP​ ​GET​ ​to `/games/Nioh​​` ​should​ ​return​ ​an​ ​individual​ ​JSON​ ​object​ ​for​ ​Nioh:
+ An HTTP GET request to `/games/&lt;title&gt;` returns JSON for a specific game that matches the corresponding game title. 
+ For example, an HTTP GET to `/games/Nioh` should return an individual JSON object for Nioh:
 </pre>
 
 <code>
 {
-​ ​​ ​​ ​​"title":​​"Nioh",
-​​ ​​ ​​ ​​"score":​ ​88
+   "title":"Nioh",
+   "score": 88
 }</code>
 <h2> Deliverables:</h2>
  <pre>
 
-1. Provide​ ​the​ ​source-code,​ ​which​ ​satisfies​ ​the​ ​requirements​ ​above.​ ​
-2. Include​ ​unit​ ​tests​ ​to​ ​test​ ​the​ ​functionality​ ​of​ ​the​ ​source​ ​code.
-3. Provide​ ​“README”​ ​style​ ​documentation​ ​on​ ​how​ ​to​ ​run​ ​the​ ​code​ ​and​ ​execute the​ ​unit​ ​tests.
+1. Provide the source-code, which satisfies the requirements above. 
+2. Include unit tests to test the functionality of the source code.
+3. Provide “README” style documentation on how to run the code and execute the unit tests.
 </pre>
 
 <h2>Python 3</h2>

@@ -1,6 +1,6 @@
 
 ### This is a test-1 TEXT written in Windows CR LF UTF8 
-# Parsing​ ​Metacritic​ ​Test / REST API
+# Parsing  Metacritic Test / REST API
 ## Task:  
 
 #### Write a proof of application in which scraping a web site and service it in REST API server
@@ -11,40 +11,40 @@ Application can do the following:
 
 2. Expose a REST API for retrieving top games. There should be 2 exposed methods:
 
-## GET​​ ​  ​/games
-An​ ​HTTP `​GET`​ ​request​ ​to​ `​​/games`​​ ​returns​ ​all​ ​top​ ​games​ ​on​ ​the​ ​Metacritic page​ ​as​ ​an​ ​array​ ​of​ ​JSON​ ​objects.​ ​For​ ​example:
+## GET   /games
+An HTTP `GET` request to `/games` returns all top games on the Metacritic page as an array of JSON objects. For example:
 
 
  ```json
 [
   {
-    "title": "Persona ​5",
+    "title": "Persona 5",
     "score": 94
   }, 
   {
-    "title": "Horizon:Zero​​Dawn",
+    "title": "Horizon:ZeroDawn",
     "score": 89
    }
 ]
 ```
 
-## GET​​ ​​/games/<title> 
+## GET /games/<title> 
 
- An​ ​HTTP​ ​GET​ ​request​ ​to​ ​​`/games/​<title>`​​ ​returns​ ​JSON​ ​for​ ​a​ ​specific​ ​game that​ ​matches​ ​the​ ​corresponding​ ​game​ ​title.​ ​
- For​ ​example,​ ​an​ ​HTTP​ ​GET​ ​to `/games/Nioh​​` ​should​ ​return​ ​an​ ​individual​ ​JSON​ ​object​ ​for​ ​Nioh:
+ An HTTP GET request to `/games/<title>` returns JSON for a specific game that matches the corresponding game title. 
+ For example, an HTTP GET to `/games/Nioh` should return an individual JSON object for Nioh:
  
 ```json
 {
-​ ​​ ​​ ​​"title":​​"Nioh", 
-​​ ​​ ​​ ​​"score":​ ​88
+   "title":"Nioh", 
+   "score": 88
 }
 ```
 
 ### Deliverables:
 
-1. Provide​ ​the​ ​source-code,​ ​which​ ​satisfies​ ​the​ ​requirements​ ​above.​ 
-2. Include​ ​unit​ ​tests​ ​to​ ​test​ ​the​ ​functionality​ ​of​ ​the​ ​source​ ​code.
-3. Provide​ ​“README”​ ​style​ ​documentation​ ​on​ ​how​ ​to​ ​run​ ​the​ ​code​ ​and​ ​execute the​ ​unit​ ​tests.
+1. Provide the source-code, which satisfies the requirements above. 
+2. Include unit tests to test the functionality of the source code.
+3. Provide “README” style documentation on how to run the code and execute the unit tests.
 
 ### Python 3
 
