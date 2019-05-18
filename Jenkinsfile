@@ -3,9 +3,9 @@ node {
 
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
-        steps {
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-            }
+
+        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+   
         checkout scm
     }
     // Using Dockerfile
