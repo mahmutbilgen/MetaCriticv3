@@ -10,7 +10,9 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-
+       app.inside {
+              sh 'pwd; ls -l; id'
+        }
       //  app = docker.build("getintodevops/hellonode")
         app = docker.build("mbilgen/metacritic")
     }
