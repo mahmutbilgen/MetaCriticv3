@@ -33,6 +33,7 @@ node {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
-           echo "Trying to push docker build to Dockerhub"
+           echo "Trying to push docker build to Dockerhub ;)"
+           echo " Envi.BUILD_ID : ${env.BUILD_ID}"
     }
 }
