@@ -3,7 +3,7 @@ agent {
   docker {
     args '-d -p 8090:8080'
     image 'mbilgen/metacritic'
-    label 'latest'
+  
   }
 }
     
