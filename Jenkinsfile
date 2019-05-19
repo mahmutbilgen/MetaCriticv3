@@ -36,4 +36,16 @@ node {
            echo "Trying to push docker build to Dockerhub ;)"
            echo " Envi.BUILD_ID : ${env.BUILD_ID}"
     }
+    
+    stage('Deploy image to Staging Server') {
+        /* Finally, we'll pull  the newly built image into Staging Server :
+         docker run -it -p 8080:8080 mbilgen/metacritic:latest
+         */
+        docker.image('mbilgen/metacritic:latest').withRun('-d  -p 8090:8080') 
+            //app.push("${env.BUILD_NUMBER}")
+         //   app.pull("latest")
+       
+           echo "Trying to pull docker build to Staging Server ;)"
+           echo " Envi.BUILD_ID : ${env.BUILD_ID}"
+    }
 }
