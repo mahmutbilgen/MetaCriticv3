@@ -1,8 +1,7 @@
 pipeline {
     agent { 
-        docker {            
-            image 'mbilgen/metacritic'
-            args '-d -p 8090:8080'
+        docker.image('mbilgen/metacritic').withRun('-d -p 8090:8080')
+         sh 'pwd ; ls -la'
         }
     }
     stages {
