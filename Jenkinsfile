@@ -41,10 +41,13 @@ node {
         /* Finally, we'll pull  the newly built image into Staging Server :
          docker run -it -p 8080:8080 mbilgen/metacritic:latest*/
      
-            docker {
+           /* docker {
                 image 'mbilgen/metacritic:latest'
                 args '-d -p 8090:8080'
-            }
+            } */
+           docker.image('mbilgen/metacritic:latest').withRun('-p 8090:8080') {
+            /* do things */
+           }
        
             //docker.image('mbilgen/metacritic:latest').withRun('-d  -p 8090:8080') 
             //app.push("${env.BUILD_NUMBER}")
