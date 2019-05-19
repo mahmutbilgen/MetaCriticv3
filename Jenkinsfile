@@ -1,7 +1,12 @@
 pipeline {
-    agent { dockerfile true }
+    agent { 
+        docker {            
+            image 'mbilgen/metacritic'
+            args '-d -p 8090:8080'
+        }
+    }
     stages {
-        stage('Test') {
+        stage('Test Build') {
             steps {
                 sh 'pwd ; ls -la'
                 sh 'docker ps -a'
