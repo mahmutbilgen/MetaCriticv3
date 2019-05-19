@@ -1,11 +1,11 @@
 pipeline {
-    agent {
-        docker {
-           image 'mbilgen/metacritic'
-          // label 'my-defined-label'
-           args  '-d -p 8090:8080'
-         }
-     }
+agent {
+  docker {
+    args '-d -p 8090:8080'
+    image 'mbilgen/metacritic'
+    label 'latest'
+  }
+}
     
     stages {
         stage('Test Build') {
