@@ -1,9 +1,12 @@
 pipeline {
-  agent any
+  agent { 
+    dockerfile true
+  }
   stages { 
     stage('Example'){
       steps {
-           echo 'Hello it is workin ;) ' 
+         echo 'Hello it is workin ;) ' 
+         sh 'echo MetaCritic App Container was built...'  
 
       }
     }
