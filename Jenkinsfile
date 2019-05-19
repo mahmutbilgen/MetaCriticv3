@@ -11,7 +11,7 @@ pipeline {
         stage('Test Build') {
             steps {
                 sh 'pwd ; ls -la'
-                sh 'docker ps -a'
+                sh '/usr/bin/docker ps -a'
                 //sh 'svn --version'
             }
         }
