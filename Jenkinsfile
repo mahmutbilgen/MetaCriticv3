@@ -1,19 +1,14 @@
 pipeline {
-agent {
-  docker {
-    args '-d -p 8090:8080'
-    image 'mbilgen/metacritic'
-  
+  agent { 
+    dockerfile true
   }
-}
-    
-    stages {
-        stage('Test Build') {
-            steps {
-                sh 'pwd ; ls -la'
-                sh '/usr/bin/docker ps -a'
-                //sh 'svn --version'
-            }
-        }
+  stages { 
+    stage('Example'){
+      steps {
+         echo 'Hello it is workin ;) ' 
+         sh 'echo MetaCritic App Container was built...'  
+
+      }
     }
+   }   
 }
