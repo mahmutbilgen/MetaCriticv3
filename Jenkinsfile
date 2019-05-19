@@ -45,9 +45,10 @@ node {
                 image 'mbilgen/metacritic:latest'
                 args '-d -p 8090:8080'
             } */
-           docker.image('mbilgen/metacritic:latest').withRun('-p 8090:8080').inside {
+           docker.image('mbilgen/metacritic:latest').withRun('-p 8090:8080') {
             /* do things */
-                sh 'make test'
+               sh 'netstat -tulpn'
+               sh 'curl localhost:8080/games'
            }
        
             //docker.image('mbilgen/metacritic:latest').withRun('-d  -p 8090:8080') 
