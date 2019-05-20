@@ -54,7 +54,11 @@ node {
             //docker.image('mbilgen/metacritic:latest').withRun('-d  -p 8090:8080') 
             //app.push("${env.BUILD_NUMBER}")
             //   app.pull("latest")
-       
+            
+          // This step should not normally be used in your script. Consult the inline help for details.
+          //withDockerContainer(args: '-p 8090:8080', image: 'mbilgen/metacritic') {
+          // some block
+          //}
            echo "Trying to pull docker build to Staging Server ;)"
            echo " Envi.BUILD_ID : ${env.BUILD_ID}"
     }
