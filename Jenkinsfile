@@ -20,7 +20,8 @@ node {
          * For this example, we're using a Volkswagen-type approach ;-) */
 
         app.inside {
-            sh 'echo "Tests passed"'
+            sh 'hostname;pwd;ls -la ;echo $PATH;netstat -tulpn'
+            sh 'echo "Tests passed"'         
         }
     }
 
@@ -47,11 +48,8 @@ node {
             } */
            docker.image('mbilgen/metacritic:latest').withRun('-p 8090:8080') {
             /* do things */
-               sh 'hostname;pwd;ls -la ;echo $PATH;netstat -tulpn'
                sh 'curl localhost:8090/games'
            }
-       
-            //docker.image('mbilgen/metacritic:latest').withRun('-d  -p 8090:8080') 
             //app.push("${env.BUILD_NUMBER}")
             //   app.pull("latest")
             
