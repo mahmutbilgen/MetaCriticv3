@@ -45,7 +45,7 @@ node {
             } */
            docker.image('mbilgen/metacritic:latest').withRun('-p 8090:8080') {
             /* do things */
-               sh 'sleep 20 '
+               sh 'sleep 10 ; docker ps '
                sh 'curl localhost:8090/games'
            }
             //app.push("${env.BUILD_NUMBER}")
