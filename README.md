@@ -1,3 +1,4 @@
+[![Build Status](http://jenkins1.mahmutbilgen.com:8080/buildStatus/icon?job=docker-build-pipeline)](http://jenkins1.mahmutbilgen.com:8080/job/docker-build-pipeline/)
 # Parsing  Metacritic Test / REST API
 ## Task:  
 
